@@ -19,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'playfair': ['Playfair Display', 'serif'],
-				'lora': ['Lora', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+				sans: ['Inter', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -74,16 +74,15 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)',
-				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-section': 'var(--gradient-section)',
 			},
 			boxShadow: {
-				'luxury': 'var(--shadow-luxury)',
-				'gold': 'var(--shadow-gold)',
+				'card': 'var(--shadow-card)',
 				'elevated': 'var(--shadow-elevated)',
+				'large': 'var(--shadow-large)',
 			},
 			transitionTimingFunction: {
-				'luxury': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
 			},
 			keyframes: {
 				'accordion-down': {

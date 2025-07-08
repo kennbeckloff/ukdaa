@@ -2,53 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Azure Haven Resort - Luxury Hotel Design System
-All colors MUST be HSL. Elegant ivory, gold, and deep navy palette.
+/* Ford Foundation - Professional Design System
+Clean, accessible design with professional typography and neutral tones.
+All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Luxury Color Palette */
-    --background: 60 30% 96%;
-    --foreground: 220 70% 15%;
+    /* Professional Color Palette */
+    --background: 0 0% 100%;
+    --foreground: 210 11% 15%;
 
-    --card: 60 30% 98%;
-    --card-foreground: 220 70% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 15%;
 
-    --popover: 60 30% 98%;
-    --popover-foreground: 220 70% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 15%;
 
-    --primary: 220 70% 15%;
-    --primary-foreground: 60 30% 96%;
+    --primary: 210 50% 25%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 25% 92%;
-    --secondary-foreground: 220 70% 15%;
+    --secondary: 210 10% 96%;
+    --secondary-foreground: 210 11% 15%;
 
-    --muted: 45 20% 94%;
-    --muted-foreground: 220 30% 45%;
+    --muted: 210 10% 96%;
+    --muted-foreground: 210 8% 46%;
 
-    --accent: 45 95% 60%;
-    --accent-foreground: 220 70% 15%;
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 30% 96%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 45 25% 88%;
-    --input: 45 25% 88%;
-    --ring: 45 95% 60%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 50% 25%;
 
-    /* Luxury Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220, 70%, 15%) 0%, hsl(220, 60%, 25%) 50%, hsl(45, 95%, 60%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(60, 30%, 98%) 0%, hsl(45, 25%, 94%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(45, 95%, 55%) 0%, hsl(45, 90%, 70%) 100%);
+    /* Professional Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210, 50%, 25%) 0%, hsl(210, 45%, 35%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(210, 10%, 98%) 100%);
     
-    /* Elegant Shadows */
-    --shadow-luxury: 0 20px 40px -10px hsl(220, 70%, 15% / 0.1);
-    --shadow-gold: 0 10px 30px -5px hsl(45, 95%, 60% / 0.2);
-    --shadow-elevated: 0 30px 60px -20px hsl(220, 70%, 15% / 0.15);
+    /* Clean Shadows */
+    --shadow-card: 0 1px 3px 0 hsl(210, 11%, 15% / 0.1), 0 1px 2px 0 hsl(210, 11%, 15% / 0.06);
+    --shadow-elevated: 0 4px 6px -1px hsl(210, 11%, 15% / 0.1), 0 2px 4px -1px hsl(210, 11%, 15% / 0.06);
+    --shadow-large: 0 10px 15px -3px hsl(210, 11%, 15% / 0.1), 0 4px 6px -2px hsl(210, 11%, 15% / 0.05);
 
     /* Smooth Transitions */
-    --transition-luxury: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
@@ -71,34 +71,34 @@ All colors MUST be HSL. Elegant ivory, gold, and deep navy palette.
   }
 
   .dark {
-    /* Dark mode with luxury navy tones */
-    --background: 220 70% 8%;
-    --foreground: 60 30% 96%;
+    /* Dark mode with professional tones */
+    --background: 210 11% 4%;
+    --foreground: 0 0% 98%;
 
-    --card: 220 65% 10%;
-    --card-foreground: 60 30% 96%;
+    --card: 210 11% 6%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 220 65% 10%;
-    --popover-foreground: 60 30% 96%;
+    --popover: 210 11% 6%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 45 95% 60%;
-    --primary-foreground: 220 70% 15%;
+    --primary: 210 40% 60%;
+    --primary-foreground: 210 11% 4%;
 
-    --secondary: 220 50% 15%;
-    --secondary-foreground: 60 30% 96%;
+    --secondary: 210 10% 10%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 50% 12%;
-    --muted-foreground: 220 20% 65%;
+    --muted: 210 10% 10%;
+    --muted-foreground: 210 5% 60%;
 
-    --accent: 45 95% 60%;
-    --accent-foreground: 220 70% 15%;
+    --accent: 24 95% 53%;
+    --accent-foreground: 210 11% 4%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 60 30% 96%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 50% 20%;
-    --input: 220 50% 20%;
-    --ring: 45 95% 60%;
+    --border: 210 20% 15%;
+    --input: 210 20% 15%;
+    --ring: 210 40% 60%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
