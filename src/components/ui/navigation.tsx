@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 interface NavItem {
   label: string;
@@ -44,13 +45,15 @@ const navItems: NavItem[] = [
     ]
   },
   { label: 'News', href: '#news' },
-  { label: 'About', href: '#about' },
+  { label: 'About', href: '/about' },
 ];
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,10 +64,26 @@ export const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const handleNavigation = (href: string) => {
+    if (href.startsWith('/')) {
+      // Page navigation
+      navigate(href);
+    } else {
+      // Section navigation (only works on home page)
+      if (location.pathname !== '/') {
+        navigate('/');
+        setTimeout(() => {
+          const element = document.querySelector(href);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
     }
     setIsMobileMenuOpen(false);
     setActiveDropdown(null);
@@ -105,7 +124,7 @@ export const Navigation = () => {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 + index * 0.05 }}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavigation(item.href)}
                   className="flex items-center gap-1 px-3 py-2 font-inter text-foreground hover:text-primary transition-colors duration-200 relative group"
                   aria-label={`Navigate to ${item.label}`}
                   aria-expanded={activeDropdown === item.label}
@@ -135,7 +154,7 @@ export const Navigation = () => {
                       {item.dropdownItems?.map((dropdownItem) => (
                         <button
                           key={dropdownItem.label}
-                          onClick={() => scrollToSection(dropdownItem.href)}
+                          onClick={() => handleNavigation(dropdownItem.href)}
                           className="block w-full text-left px-4 py-2 font-inter text-foreground hover:bg-secondary hover:text-primary transition-colors duration-200"
                         >
                           {dropdownItem.label}
@@ -187,7 +206,7 @@ export const Navigation = () => {
                 {navItems.map((item) => (
                   <div key={item.label}>
                     <button
-                      onClick={() => scrollToSection(item.href)}
+                      onClick={() => handleNavigation(item.href)}
                       className="block w-full text-left font-inter text-foreground hover:text-primary transition-colors duration-200 px-4 py-3"
                     >
                       {item.label}
@@ -197,7 +216,7 @@ export const Navigation = () => {
                         {item.dropdownItems.map((dropdownItem) => (
                           <button
                             key={dropdownItem.label}
-                            onClick={() => scrollToSection(dropdownItem.href)}
+                            onClick={() => handleNavigation(dropdownItem.href)}
                             className="block w-full text-left font-inter text-muted-foreground hover:text-primary transition-colors duration-200 px-4 py-2 text-sm"
                           >
                             {dropdownItem.label}
