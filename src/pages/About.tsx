@@ -63,7 +63,7 @@ const About = () => {
                   Good Neighbor Committee
                 </h2>
                 <p className="font-inter text-foreground leading-relaxed mb-6">
-                  Since 2011, the foundation's Good Neighbor Committee has supported organizations and activities 
+                  Since 2011, UKDAA's Good Neighbor Committee has supported organizations and activities 
                   near our headquarters, in Birmingham city of the UK, that contribute to the neighborhood's 
                   civic spirit and vitality. The committee's work strengthens our ties to our immediate neighbors 
                   and connects us to local organizations working on problems related to our mission.

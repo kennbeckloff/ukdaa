@@ -94,7 +94,7 @@ export const Footer = () => {
             className="lg:col-span-2"
           >
             <h4 className="font-inter text-2xl font-bold mb-4">
-              United Kingdom International Development Aid For Africa
+              UKDAA
             </h4>
             <p className="font-inter text-primary-foreground/80 leading-relaxed mb-6 max-w-md">
               We are a social justice philanthropy committed to reducing inequality and strengthening democratic values around the world.
@@ -154,20 +154,20 @@ export const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="text-accent flex-shrink-0 mt-0.5" size={18} />
                 <div className="font-inter text-primary-foreground/80 text-sm">
-                  <p>320 E 43rd Street</p>
-                  <p>New York, NY 10017</p>
+                  <p>Alpha Tower, Suffolk Street Queensway</p>
+                  <p>Birmingham, B1 1TT, UK</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-accent flex-shrink-0" size={18} />
                 <div className="font-inter text-primary-foreground/80 text-sm">
-                  <p>(212) 573-5000</p>
+                  <p>+44 121 234 5678</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="text-accent flex-shrink-0" size={18} />
                 <div className="font-inter text-primary-foreground/80 text-sm">
-                  <p>office-communications@fordfoundation.org</p>
+                  <p>info@ukdaa.org.uk</p>
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@ export const Footer = () => {
       >
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm font-inter text-primary-foreground/60">
-            <p>© 2024 United Kingdom International Development Aid For Africa. All rights reserved.</p>
+            <p>© 2024 UKDAA. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-accent transition-colors duration-300">
                 Privacy Policy
