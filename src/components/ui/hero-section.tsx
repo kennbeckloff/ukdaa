@@ -26,8 +26,8 @@ export const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-inter text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-8"
           >
-            Building a Better Future
-            <span className="block text-accent">for All</span>
+            United Kingdom International
+            <span className="block text-accent">Development Aid For Africa</span>
           </motion.h1>
 
           <motion.p
