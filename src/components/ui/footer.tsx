@@ -94,7 +94,7 @@ export const Footer = () => {
             className="lg:col-span-2"
           >
             <h4 className="font-inter text-2xl font-bold mb-4">
-              Ford Foundation
+              United Kingdom International Development Aid For Africa
             </h4>
             <p className="font-inter text-primary-foreground/80 leading-relaxed mb-6 max-w-md">
               We are a social justice philanthropy committed to reducing inequality and strengthening democratic values around the world.
@@ -185,7 +185,7 @@ export const Footer = () => {
       >
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm font-inter text-primary-foreground/60">
-            <p>© 2024 Ford Foundation. All rights reserved.</p>
+            <p>© 2024 United Kingdom International Development Aid For Africa. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-accent transition-colors duration-300">
                 Privacy Policy

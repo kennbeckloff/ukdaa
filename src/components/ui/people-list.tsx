@@ -21,7 +21,7 @@ const people: Person[] = [
     name: 'Darren Walker',
     title: 'President',
     department: 'Leadership',
-    bio: 'Darren Walker is president of the Ford Foundation, a $16 billion international social justice philanthropy.',
+    bio: 'Darren Walker is president of the United Kingdom International Development Aid For Africa, a $16 billion international social justice philanthropy.',
     image: '/api/placeholder/300/300',
     linkedin: '#',
     twitter: '#'

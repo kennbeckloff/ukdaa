@@ -89,7 +89,7 @@ export const Navigation = () => {
             transition={{ delay: 0.1 }}
             className="font-inter text-xl lg:text-2xl font-bold text-primary"
           >
-            Ford Foundation
+            United Kingdom International Development Aid For Africa
           </motion.div>
 
           {/* Desktop Navigation */}
