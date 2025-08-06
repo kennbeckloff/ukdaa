@@ -167,7 +167,7 @@ export const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="text-accent flex-shrink-0" size={18} />
                 <div className="font-inter text-primary-foreground/80 text-sm">
-                  <p>info@ukdaa.org.uk</p>
+                  <p>info@ukdaa.org</p>
                 </div>
               </div>
             </div>
