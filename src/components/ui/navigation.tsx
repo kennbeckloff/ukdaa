@@ -30,6 +30,7 @@ const navItems: NavItem[] = [
     dropdownItems: [
       { label: 'Apply for Grants', href: '#apply' },
       { label: 'Search Grants', href: '#search' },
+      { label: 'Funding Criteria', href: '/funding-criteria' },
       { label: 'Grant Database', href: '#database' }
     ]
   },

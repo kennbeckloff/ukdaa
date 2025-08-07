@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageCircle, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -168,6 +168,19 @@ export const Footer = () => {
                 <Mail className="text-accent flex-shrink-0" size={18} />
                 <div className="font-inter text-primary-foreground/80 text-sm">
                   <p>info@ukdaa.org</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <MessageCircle className="text-accent flex-shrink-0" size={18} />
+                <div className="font-inter text-primary-foreground/80 text-sm">
+                  <a 
+                    href="https://wa.me/447796115923" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-accent transition-colors duration-300"
+                  >
+                    +44 7796 115923
+                  </a>
                 </div>
               </div>
             </div>
