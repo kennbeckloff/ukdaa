@@ -63,7 +63,10 @@ const FundingCriteria = () => {
     { name: "Sierra Leone", x: 28, y: 35 },
     { name: "Liberia", x: 32, y: 38 },
     { name: "Ivory Coast", x: 35, y: 38 },
-    { name: "Burkina Faso", x: 38, y: 32 }
+    { name: "Burkina Faso", x: 38, y: 32 },
+    { name: "Mauritania", x: 28, y: 25 },
+    { name: "Guinea-Bissau", x: 28, y: 32 },
+    { name: "Togo", x: 38, y: 35 }
   ];
 
   return (
@@ -175,7 +178,7 @@ const FundingCriteria = () => {
           <CardHeader>
             <CardTitle className="text-center">Countries We've Worked With</CardTitle>
             <p className="text-center text-muted-foreground">
-              We have successfully supported projects across 36 African countries
+              We have successfully supported projects across 39 African countries
             </p>
           </CardHeader>
           <CardContent>
@@ -308,6 +311,15 @@ const FundingCriteria = () => {
                 
                 {/* Senegal */}
                 <path d="M180 180 L230 175 L235 200 L185 205 Z" fill={countriesWorkedWith.find(c => c.name === "Senegal") ? "#22c55e" : "#10b981"} stroke="#ffffff" strokeWidth="1" filter="url(#countryShadow)" />
+                
+                {/* Mauritania */}
+                <path d="M180 140 L250 135 L255 175 L185 180 Z" fill={countriesWorkedWith.find(c => c.name === "Mauritania") ? "#22c55e" : "#f97316"} stroke="#ffffff" strokeWidth="1" filter="url(#countryShadow)" />
+                
+                {/* Guinea-Bissau */}
+                <path d="M180 200 L210 195 L215 210 L185 215 Z" fill={countriesWorkedWith.find(c => c.name === "Guinea-Bissau") ? "#22c55e" : "#a855f7"} stroke="#ffffff" strokeWidth="1" filter="url(#countryShadow)" />
+                
+                {/* Togo */}
+                <path d="M340 220 L355 215 L360 240 L345 245 Z" fill={countriesWorkedWith.find(c => c.name === "Togo") ? "#22c55e" : "#14b8a6"} stroke="#ffffff" strokeWidth="1" filter="url(#countryShadow)" />
 
                 {/* Country labels for major countries */}
                 <text x="350" y="200" textAnchor="middle" className="fill-white text-xs font-semibold drop-shadow-sm">NIGERIA</text>
