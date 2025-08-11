@@ -18,28 +18,28 @@ const testimonials: Testimonial[] = [
     location: 'Madrid, Spain',
     rating: 5,
     review: 'Azure Haven exceeded every expectation. The presidential villa with its private infinity pool was absolutely breathtaking. The staff anticipated our every need, making our anniversary truly unforgettable.',
-    date: 'November 2024'
+    date: 'November 2025'
   },
   {
     name: 'James & Victoria Chen',
     location: 'Singapore',
     rating: 5,
     review: 'The attention to detail is extraordinary. From the moment we arrived, we felt like royalty. The beachfront villa and private dining experiences created memories that will last a lifetime.',
-    date: 'October 2024'
+    date: 'October 2025'
   },
   {
     name: 'Alexander Thompson',
     location: 'London, UK',
     rating: 5,
     review: 'I have stayed at luxury resorts worldwide, but Azure Haven sets a new standard. The combination of pristine natural beauty and impeccable service is truly unmatched.',
-    date: 'September 2024'
+    date: 'September 2025'
   },
   {
     name: 'Sofia Andersson',
     location: 'Stockholm, Sweden',
     rating: 5,
     review: 'Perfect honeymoon destination. The ocean view suite was magical, and the spa treatments were divine. Every moment felt like a dream come true.',
-    date: 'August 2024'
+    date: 'August 2025'
   }
 ];
 

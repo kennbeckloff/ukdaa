@@ -24,8 +24,8 @@ const grants: Grant[] = [
     description: 'Supporting grassroots leaders working to advance economic opportunity in their communities.',
     focusArea: 'Inequality',
     location: 'United States',
-    amount: '$50,000 - $200,000',
-    deadline: '2024-03-15',
+    amount: '£50,000 - £200,000',
+    deadline: '2025-03-15',
     eligibility: 'Community organizations'
   },
   {
@@ -34,8 +34,8 @@ const grants: Grant[] = [
     description: 'Funding innovative tech solutions that promote equity and protect civil rights.',
     focusArea: 'Technology',
     location: 'Global',
-    amount: '$100,000 - $500,000',
-    deadline: '2024-04-01',
+    amount: '£100,000 - £500,000',
+    deadline: '2025-04-01',
     eligibility: 'Tech nonprofits'
   },
   {
@@ -44,8 +44,8 @@ const grants: Grant[] = [
     description: 'Supporting artists and cultural workers addressing social and political issues.',
     focusArea: 'Creativity',
     location: 'Latin America',
-    amount: '$25,000 - $100,000',
-    deadline: '2024-02-28',
+    amount: '£25,000 - £100,000',
+    deadline: '2025-02-28',
     eligibility: 'Artists and cultural organizations'
   }
 ];

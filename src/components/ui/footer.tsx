@@ -183,6 +183,19 @@ export const Footer = () => {
                   </a>
                 </div>
               </div>
+              <div className="flex items-center gap-3">
+                <MessageCircle className="text-accent flex-shrink-0" size={18} />
+                <div className="font-inter text-primary-foreground/80 text-sm">
+                  <a 
+                    href="https://wa.me/447832619068" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-accent transition-colors duration-300"
+                  >
+                    +44 7832 619068
+                  </a>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -198,7 +211,7 @@ export const Footer = () => {
       >
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm font-inter text-primary-foreground/60">
-            <p>© 2024 UKDAA. All rights reserved.</p>
+            <p>© 2025 UKDAA. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-accent transition-colors duration-300">
                 Privacy Policy

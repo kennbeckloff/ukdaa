@@ -174,7 +174,7 @@ export const PeopleList = () => {
             size="lg"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold"
           >
-            View All Staff & Leadership
+            View All UKDAA Staff
           </Button>
         </motion.div>
       </div>

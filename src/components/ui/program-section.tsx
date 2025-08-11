@@ -57,7 +57,7 @@ export const ProgramSection = () => {
         </svg>
       ),
       stats: {
-        value: '$500M+',
+        value: '£500M+',
         label: 'Invested in health sector'
       }
     },
@@ -114,7 +114,7 @@ export const ProgramSection = () => {
       }
     },
     {
-      title: 'Anti Female Genital Manipulation',
+      title: 'Anti Female Genital Mutilation',
       description: 'We have helped groups fight FGM and protect women and girls across Africa, making significant impact in communities.',
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,7 +122,7 @@ export const ProgramSection = () => {
         </svg>
       ),
       stats: {
-        value: '$340M',
+        value: '£340M',
         label: 'Already disbursed'
       }
     },

@@ -10,10 +10,10 @@ import technologyImage from '@/assets/technology-innovation.jpg';
 const featuredStories = [
   {
     title: 'Investing in Educational Equity',
-    description: 'How our new $50 million initiative is transforming educational opportunities for underserved communities across the United States.',
+    description: 'How our new £50 million initiative is transforming educational opportunities for underserved communities across the United States.',
     image: educationImage,
     category: 'Education',
-    date: '2024-01-15',
+    date: '2025-01-15',
     href: '#education-story',
     featured: true
   },
@@ -22,7 +22,7 @@ const featuredStories = [
     description: 'Supporting digital rights and ensuring technology serves democratic values in the digital age.',
     image: technologyImage,
     category: 'Technology',
-    date: '2024-01-10',
+    date: '2025-01-10',
     href: '#tech-story'
   },
   {
@@ -30,7 +30,7 @@ const featuredStories = [
     description: 'Creating pathways to economic opportunity and addressing systemic barriers to prosperity.',
     image: socialJusticeImage,
     category: 'Economy',
-    date: '2024-01-05',
+    date: '2025-01-05',
     href: '#economy-story'
   }
 ];

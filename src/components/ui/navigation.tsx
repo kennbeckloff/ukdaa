@@ -40,9 +40,7 @@ const navItems: NavItem[] = [
     href: '#people',
     hasDropdown: true,
     dropdownItems: [
-      { label: 'Leadership', href: '#leadership' },
-      { label: 'Board', href: '#board' },
-      { label: 'Staff', href: '#staff' }
+      { label: 'UKDAA Staff', href: '#staff' }
     ]
   },
   { label: 'News', href: '#news' },
@@ -107,9 +105,13 @@ export const Navigation = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 }}
-            className="font-inter text-xl lg:text-2xl font-bold text-primary"
+            className="flex items-center"
           >
-            UKDAA
+            <img 
+              src="/lovable-uploads/ee62cf46-2639-4388-ba46-b8411f6d264d.png" 
+              alt="UKDAA Logo" 
+              className="h-8 lg:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-200"
+            />
           </motion.div>
 
           {/* Desktop Navigation */}
