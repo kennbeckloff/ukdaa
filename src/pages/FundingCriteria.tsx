@@ -3,7 +3,8 @@ import { Navigation } from '@/components/ui/navigation';
 import { Footer } from '@/components/ui/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, FileText, Users, Globe } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { CheckCircle, FileText, Users, Globe, Download } from 'lucide-react';
 
 const FundingCriteria = () => {
   const requiredDocuments = [
@@ -146,6 +147,37 @@ const FundingCriteria = () => {
                 <p className="text-sm text-yellow-800 dark:text-yellow-200">
                   <strong>Important:</strong> We are occasionally asked to provide proof by the Charities Commission regarding expenditure overseas. Failure to submit these reports may result in an investigation as to how your charity is using/has used these funds.
                 </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Download Grant Application Form */}
+        <div className="text-center mb-12">
+          <Card className="max-w-md mx-auto">
+            <CardContent className="pt-6">
+              <div className="flex flex-col items-center gap-4">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <FileText className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">Grant Application Form</h3>
+                <p className="text-muted-foreground text-center">
+                  Download our official grant application form to get started with your funding request.
+                </p>
+                <Button 
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = '/files/Ukdaa-Grant Application Form.docx';
+                    link.download = 'UKDAA-Grant-Application-Form.docx';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                  className="w-full"
+                >
+                  <Download className="h-4 w-4 mr-2" />
+                  Download Grant Form
+                </Button>
               </div>
             </CardContent>
           </Card>

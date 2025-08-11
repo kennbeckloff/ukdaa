@@ -17,10 +17,11 @@ const navItems: NavItem[] = [
     href: '#our-work',
     hasDropdown: true,
     dropdownItems: [
-      { label: 'Inequality', href: '#inequality' },
-      { label: 'Democracy', href: '#democracy' },
-      { label: 'Technology', href: '#technology' },
-      { label: 'Creativity', href: '#creativity' }
+      { label: 'East Africa', href: '/east-africa' },
+      { label: 'North Africa', href: '/north-africa' },
+      { label: 'West Africa', href: '/west-africa' },
+      { label: 'Central Africa', href: '/central-africa' },
+      { label: 'Southern Africa', href: '/southern-africa' }
     ]
   },
   { 
@@ -34,7 +35,16 @@ const navItems: NavItem[] = [
       { label: 'Grant Database', href: '#database' }
     ]
   },
-  { label: 'Ideas', href: '#ideas' },
+  { 
+    label: 'Resources', 
+    href: '#resources',
+    hasDropdown: true,
+    dropdownItems: [
+      { label: 'Governance & Financial Statements', href: '#governance' },
+      { label: 'Newsletter', href: '#newsletter' },
+      { label: 'Reports', href: '#reports' }
+    ]
+  },
   { 
     label: 'People', 
     href: '#people',
