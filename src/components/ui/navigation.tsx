@@ -29,10 +29,9 @@ const navItems: NavItem[] = [
     href: '#grants',
     hasDropdown: true,
     dropdownItems: [
-      { label: 'Apply for Grants', href: '#apply' },
-      { label: 'Search Grants', href: '#search' },
+      { label: 'Grant Opportunities', href: '/#grants' },
+      { label: 'Apply for Grants', href: '/apply-grants' },
       { label: 'Funding Criteria', href: '/funding-criteria' },
-      { label: 'Grant Database', href: '#database' }
     ]
   },
   { 
@@ -53,7 +52,7 @@ const navItems: NavItem[] = [
       { label: 'UKDAA Staff', href: '#staff' }
     ]
   },
-  { label: 'News', href: '#news' },
+  { label: 'Career', href: '/careers' },
   { label: 'About', href: '/about' },
 ];
 
