@@ -69,8 +69,8 @@ const About = () => {
                   and connects us to local organizations working on problems related to our mission.
                 </p>
                 <p className="font-inter text-foreground leading-relaxed">
-                  This program has been so successful that some of our regional offices in Asia, Africa, 
-                  and Latin America have formed their own Good Neighbor Committees.
+                  This program has been so successful that some of our regional offices in Asia and Africa 
+                  have formed their own Good Neighbor Committees.
                 </p>
               </div>
 

@@ -250,6 +250,56 @@ const Careers = () => {
         "Ensure compliance with local regulations and policies",
         "Prepare reports and presentations for management"
       ]
+    },
+    {
+      title: "IT Specialist",
+      positions: 3,
+      location: "Kenya / South Africa / Remote",
+      type: "Full-time",
+      description: "Provide comprehensive IT support and maintain technology infrastructure to ensure seamless operations across our offices and remote teams.",
+      requirements: [
+        "Bachelor's degree in Information Technology, Computer Science, or related field",
+        "4+ years of experience in IT support and system administration",
+        "Strong knowledge of Windows and Linux operating systems",
+        "Experience with network administration and cybersecurity",
+        "Proficiency in cloud platforms (AWS, Azure, Google Cloud)",
+        "Knowledge of database management and backup systems",
+        "Excellent troubleshooting and problem-solving skills"
+      ],
+      responsibilities: [
+        "Maintain and troubleshoot computer systems and networks",
+        "Provide technical support to staff across multiple locations",
+        "Implement and manage cybersecurity measures",
+        "Oversee software installations and updates",
+        "Manage data backup and recovery systems",
+        "Coordinate with vendors for hardware procurement and maintenance",
+        "Train staff on new technologies and software applications"
+      ]
+    },
+    {
+      title: "Data Analysis Specialist",
+      positions: 2,
+      location: "Nairobi, Kenya / Cape Town, South Africa",
+      type: "Full-time",
+      description: "Analyze program data and generate insights to inform strategic decision-making and improve program effectiveness across our African operations.",
+      requirements: [
+        "Master's degree in Statistics, Data Science, Economics, or related field",
+        "3+ years of experience in data analysis and visualization",
+        "Proficiency in statistical software (R, Python, SPSS, Stata)",
+        "Experience with data visualization tools (Tableau, Power BI)",
+        "Strong analytical and critical thinking skills",
+        "Knowledge of database management and SQL",
+        "Experience working with large datasets and survey data"
+      ],
+      responsibilities: [
+        "Analyze program data to measure impact and effectiveness",
+        "Create dashboards and visualizations for stakeholders",
+        "Conduct statistical analysis and predictive modeling",
+        "Prepare data-driven reports and presentations",
+        "Support monitoring and evaluation activities",
+        "Collaborate with program teams to identify key metrics",
+        "Maintain data quality and ensure accuracy of analysis"
+      ]
     }
   ];
 
@@ -444,9 +494,9 @@ const Careers = () => {
                     Only successful candidates will be contacted via our official email and contacts.
                   </p>
                   <div className="bg-destructive/10 p-4 rounded-lg border border-destructive/20">
-                    <p className="text-foreground font-medium">
-                      <strong>Application Deadline:</strong> 12th September 2025
-                    </p>
+                     <p className="text-foreground font-medium">
+                       <strong>Application Deadline:</strong> 1st October 2025
+                     </p>
                   </div>
                 </div>
               </CardContent>

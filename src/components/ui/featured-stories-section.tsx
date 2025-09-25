@@ -10,7 +10,7 @@ import technologyImage from '@/assets/technology-innovation.jpg';
 const featuredStories = [
   {
     title: 'Investing in Educational Equity',
-    description: 'How our new £50 million initiative is transforming educational opportunities for underserved communities across the United States.',
+    description: 'How our new £50 million initiative is transforming educational opportunities for underserved communities across Africa.',
     image: educationImage,
     category: 'Education',
     date: '2025-01-15',

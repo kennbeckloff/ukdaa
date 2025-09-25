@@ -23,9 +23,9 @@ const grants: Grant[] = [
     title: 'Community Leadership Development',
     description: 'Supporting grassroots leaders working to advance economic opportunity in their communities.',
     focusArea: 'Inequality',
-    location: 'United States',
+    location: 'Africa',
     amount: '£50,000 - £200,000',
-    deadline: '2025-03-15',
+    deadline: '2025-11-12',
     eligibility: 'Community organizations'
   },
   {
@@ -35,7 +35,7 @@ const grants: Grant[] = [
     focusArea: 'Technology',
     location: 'Global',
     amount: '£100,000 - £500,000',
-    deadline: '2025-04-01',
+    deadline: '2025-11-12',
     eligibility: 'Tech nonprofits'
   },
   {
@@ -43,9 +43,9 @@ const grants: Grant[] = [
     title: 'Arts and Cultural Expression',
     description: 'Supporting artists and cultural workers addressing social and political issues.',
     focusArea: 'Creativity',
-    location: 'Latin America',
+    location: 'Africa',
     amount: '£25,000 - £100,000',
-    deadline: '2025-02-28',
+    deadline: '2025-11-12',
     eligibility: 'Artists and cultural organizations'
   }
 ];
@@ -142,8 +142,6 @@ export const GrantFilter = () => {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="Global">Global</SelectItem>
-                <SelectItem value="United States">United States</SelectItem>
-                <SelectItem value="Latin America">Latin America</SelectItem>
                 <SelectItem value="Africa">Africa</SelectItem>
                 <SelectItem value="Asia">Asia</SelectItem>
               </SelectContent>

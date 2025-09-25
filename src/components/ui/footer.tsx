@@ -5,9 +5,11 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { useNavigate } from 'react-router-dom';
 
 export const Footer = () => {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [isSubscribing, setIsSubscribing] = useState(false);
 
@@ -31,7 +33,7 @@ export const Footer = () => {
     { label: 'Grants', href: '#grants' },
     { label: 'Ideas', href: '#ideas' },
     { label: 'People', href: '#people' },
-    { label: 'News', href: '#news' },
+    { label: 'Career', href: '/careers' },
     { label: 'About', href: '#about' }
   ];
 
@@ -130,7 +132,13 @@ export const Footer = () => {
               {quickLinks.map((link) => (
                 <li key={link.label}>
                   <button
-                    onClick={() => document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={() => {
+                      if (link.href.startsWith('/')) {
+                        navigate(link.href);
+                      } else {
+                        document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
                     className="font-inter text-primary-foreground/80 hover:text-accent transition-colors duration-300"
                   >
                     {link.label}
