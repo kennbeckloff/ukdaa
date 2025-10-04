@@ -495,7 +495,7 @@ const Careers = () => {
                   </p>
                   <div className="bg-destructive/10 p-4 rounded-lg border border-destructive/20">
                      <p className="text-foreground font-medium">
-                       <strong>Application Deadline:</strong> 1st October 2025
+                       <strong>Application Deadline:</strong> 3rd November 2025
                      </p>
                   </div>
                 </div>
